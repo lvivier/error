@@ -25,7 +25,15 @@ With [component][1] or [npm][2]:
 ```
 $ component install lvivier/error
 
-$ npm install lvivier/err
+$ npm install git://github.com/lvivier/error.git
+```
+
+### Add to package.json
+
+As of [npm 1.1.65][3]:
+
+```
+{"error": "lvivier/error"}
 ```
 
 ## Usage
@@ -40,3 +48,4 @@ $ npm install lvivier/err
 
 [1]:http://github.com/component/component
 [2]:http://npmjs.org/
+[3]:https://npmjs.org/doc/json.html#GitHub-URLs
