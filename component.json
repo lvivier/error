@@ -1,0 +1,7 @@
+{
+  "name": "error",
+  "repo": "lvivier/error",
+  "description": "Custom error constructors",
+  "version": "0.0.1",
+  "scripts": ["index.js"]
+}
