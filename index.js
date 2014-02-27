@@ -28,8 +28,9 @@ function factory (name, parent, opts) {
     this.message = message
   }
 
-  // can't use new Function() b/c of scope
-  var err = eval('(function '+name+'(){fn.apply(this, arguments)})')
+  var body = 'return function '+name+'(){fn.apply(this,arguments)}'
+  var err = new Function('fn', body)(fn)
+
   err.prototype = Object.create(parent.prototype)
   err.prototype.constructor = err
   err.prototype.name = name
