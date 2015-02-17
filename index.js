@@ -1,15 +1,9 @@
 
-module.exports = factory
-
 /**
  * Error constructor factory
- *
- * - constructors returned from this factory are instances of Error or `parent`
- * - the returned constructor will have a name
- * - members of the `opts` object will become properties of the error instance
- * - if `opts.stack` is `false`, errors won't have stack traces
  */
-function factory (name, parent, opts) {
+
+module.exports = function (name, parent, opts) {
   if ('undefined' == typeof opts && 'function' !== typeof parent) {
     opts = parent
     parent = undefined
