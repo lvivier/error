@@ -2,6 +2,6 @@
   "name": "error",
   "repo": "lvivier/error",
   "description": "Custom error constructors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": ["index.js"]
 }

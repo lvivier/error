@@ -1,6 +1,6 @@
 {
   "name": "error",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "lvivier/error",
   "description": "Custom error constructors",
   "author": "Luke Vivier <luke@vivier.ca>",
